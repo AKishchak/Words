@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+dist/words.json
+npm-debug.log

@@ -1,0 +1,9 @@
+body {
+  font-size: 120%;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.title {
+  text-transform: capitalize
+}
