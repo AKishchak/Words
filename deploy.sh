@@ -7,7 +7,7 @@ git init
 
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
-git config user.email "simon@hubwa.re"
+git config user.email ""
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deployed: DATE".
@@ -20,6 +20,6 @@ git commit -m "Deployed: $NOW"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 
-git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" master > /dev/null 2>&1
+git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
 
 #Source https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
