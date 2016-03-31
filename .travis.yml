@@ -3,10 +3,8 @@ sudo: false
 branches:
   only:
     - master
-before_install:
-- gem install scss_lint
 script:
-- npm run build --release
+- node dist/build.js
 node_js:
 - '4.1'
 env:
