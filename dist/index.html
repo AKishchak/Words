@@ -35,7 +35,7 @@
         <thead>
           <tr>
             <th></th>
-            <th>M</th>
+            <th>M (or not defined yet)</th>
             <th>N</th>
             <th>F</th>
             <th>Pl</th>
@@ -44,10 +44,10 @@
         <tbody>
           <tr ng-repeat="(fr, ru) in list">
             <td ng-class="{hidden: !show.french}" ng-bind="fr"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind="!!ru.M ? ru.M : ru"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind="ru.N || '-'"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind="ru.F || '-'"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind="ru.P || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="!!ru.M ? accentuate(ru.M) : accentuate(ru)"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.N) || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.F) || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.P) || '-'"></td>
           </tr>
         </tbody>
       </table>
@@ -56,6 +56,7 @@
   </div>
 
   <script src="./js/angular.min.js" charset="utf-8"></script>
+  <script src="./js/angular-sanitize.min.js" charset="utf-8"></script>
   <script src="./js/main.js" charset="utf-8"></script>
 </body>
 </html>

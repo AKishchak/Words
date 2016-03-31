@@ -1,5 +1,4 @@
 body {
-  font-size: 120%;
   padding: 3rem 0;
   width: 100%;
 }
@@ -23,4 +22,13 @@ label {
 
 table {
   table-layout: fixed;
+}
+
+table td {
+  font-size: 21px;
+}
+
+b {
+  color: #000;
+  font-weight: bold;
 }
