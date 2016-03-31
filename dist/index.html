@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Russian</title>
-    <link rel="stylesheet" href="./css/bulma.min.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
-  </head>
-  <body ng-app="russian">
-    <div ng-controller="mainCtrl" class="container">
-      <div ng-repeat="(categorie, list) in json">
+<head>
+  <meta charset="utf-8">
+  <title>Russian</title>
+  <link rel="stylesheet" href="./css/bulma.min.css"/>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body ng-app="russian">
+  <div ng-controller="mainCtrl" class="container">
 
-        <h1 class="title is-3" ng-bind="categorie"></h1>
-        <table class="table is-bordered is-striped is-narrow">
-          <thead>
-            <tr>
-              <th></th>
-              <th>M</th>
-              <th>N</th>
-              <th>F</th>
-              <th>Pl</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="(fr, ru) in list">
-              <td ng-bind="fr"></td>
-              <td ng-bind="!!ru.M ? ru.M : ru"></td>
-              <td ng-bind="ru.N || '-'"></td>
-              <td ng-bind="ru.F || '-'"></td>
-              <td ng-bind="ru.P || '-'"></td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
+    <div class="tabs">
+      <ul>
+        <li ng-repeat="(categorie, list) in json"><a ng-href="#title-{{$index}}">{{categorie}}</a></li>
+      </ul>
     </div>
 
-    <script src="./js/angular.min.js" charset="utf-8"></script>
-    <script src="./js/main.js" charset="utf-8"></script>
-  </body>
+    <div>
+      <p class="control">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.french">
+          Show French
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.russian">
+          Show Russian
+        </label>
+      </p>
+    </div>
+
+    <div ng-repeat="(categorie, list) in json">
+
+      <h1 id="title-{{$index}}" class="title is-3" ng-bind="categorie"></h1>
+      <table class="table is-bordered is-striped is-narrow">
+        <thead>
+          <tr>
+            <th></th>
+            <th>M</th>
+            <th>N</th>
+            <th>F</th>
+            <th>Pl</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="(fr, ru) in list">
+            <td ng-class="{hidden: !show.french}" ng-bind="fr"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind="!!ru.M ? ru.M : ru"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind="ru.N || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind="ru.F || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind="ru.P || '-'"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <script src="./js/angular.min.js" charset="utf-8"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
+</body>
 </html>

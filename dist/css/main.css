@@ -4,6 +4,23 @@ body {
   width: 100%;
 }
 
-.title {
+.title,
+.tabs a {
   text-transform: capitalize
+}
+
+.title {
+  margin-top: 1.5rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.hidden {
+  font-size: 0;
+}
+
+table {
+  table-layout: fixed;
 }
