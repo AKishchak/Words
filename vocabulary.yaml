@@ -4,7 +4,6 @@ Poupée Russe: Матрёшка
 Ours: Медведь
 Porte: Дверь
 Tasse: Чашка
-Mug: Крушка
 Chapka: Шапка
 Maison:
   M: Дом
@@ -20,14 +19,14 @@ Salut!: Привет!
 Vélo: Велосипед
 Copain: Парень
 Baleine: Кит
-Travail: Робота
+Travail: Работа
 Mug: Кружка
 Guitare: Гитара
 Appartement: Квартира
 Chambre: Спальня
-Salon: Салон
+Salon: Гостиная
 Salle à manger: Столовая
-Cuisine: Кухна
+Cuisine: Кухня
 Salle de bain: Ванная
 Lit: Кровать
 Chaise: Стул
@@ -36,8 +35,8 @@ Bureau: Бюро / Офис
 Toilettes: Туалет
 Pièce: Комната
 Étage: Этаж
-Immeuble: Комната
-Père: Отеч
+Immeuble: Здание
+Père: Отец
 Papa: Папа
 Mère: Мать
 Maman: Мама
@@ -47,8 +46,8 @@ Frère: Брат
 Soeur: Сестра
 Oncle: Дядя
 Tante: Тётя
-Cousin: Кузен
-Cousine: Кузина
+Cousin: Двоюродныи брат
+Cousine: Двоюродная сестра
 Fenêtre: Окно
 Lampe: Лампа
 Livre: Книга
