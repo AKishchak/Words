@@ -20,6 +20,6 @@ git commit -m "Deployed: $NOW"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 
-git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" master:gh-pages > /dev/null 2>&1
 
 #Source https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
