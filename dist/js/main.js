@@ -15,10 +15,8 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
 
   $scope.accentuate = function accentuate(str) {
     if (str) {
-      var startReg = /\(/;
-      var endReg = /\)/;
-      str = str.replace(startReg, '<b>');
-      str = str.replace(endReg, '</b>');
+      str = str.replace(/\(/g, '<b>');
+      str = str.replace(/\)/g, '</b>');
       return str;
     } else{
       return '-';
