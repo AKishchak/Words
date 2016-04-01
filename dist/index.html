@@ -17,6 +17,7 @@
 
     <div>
       <p class="control">
+        <button style="margin: -1rem 1rem 0 0;" type="button" class="button is-info" ng-click="shuffling()">Shuffle!</button>
         <label class="checkbox">
           <input type="checkbox" ng-model="show.french">
           Show French
@@ -34,6 +35,7 @@
       <table class="table is-bordered is-striped is-narrow">
         <thead>
           <tr>
+            <th style="width: 1px;"></th>
             <th></th>
             <th>M (or not defined yet)</th>
             <th>N</th>
@@ -42,12 +44,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="(fr, ru) in list">
-            <td ng-class="{hidden: !show.french}" ng-bind="fr"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind-html="!!ru.M ? accentuate(ru.M) : accentuate(ru)"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.N) || '-'"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.F) || '-'"></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(ru.P) || '-'"></td>
+          <tr ng-repeat="item in list">
+            <td ng-bind="$index + 1"></td>
+            <td ng-class="{hidden: !show.french}"><span ng-bind="item.fr"></span></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="!!item.ru.M ? accentuate(item.ru.M) : accentuate(item.ru)"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.N) || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.F) || '-'"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.P) || '-'"></td>
           </tr>
         </tbody>
       </table>
