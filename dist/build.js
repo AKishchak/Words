@@ -12,7 +12,7 @@ for (var i = 0; i < files.length; i++) {
   try {
     json[files[i]] = (yaml.safeLoad(fs.readFileSync('sources/' + files[i] + '.yaml', 'utf8')));
   } catch (e) {
-    console.log(ERROR, e);
+    console.log('ERROR', e);
   }
 }
 
