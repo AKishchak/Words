@@ -100,9 +100,8 @@ Voisin:
 Mon copain:
   M: Меня д(е)вушка
   F: Меня п(а)рень
-Mari:
+Mari / Femme:
   M: Муж
-Femme:
   F: жен(а)
 Époux:
   M: супр(у)г
@@ -111,10 +110,9 @@ Famille:
   F: Семь(я)
 Parents:
   P: Род(и)тели
-Fille:
-  F: дочь
-Fils:
+Fils / Fille:
   M: Сын
+  F: дочь
 Nièce:
   F: Плем(я)нница
 Neveu:
