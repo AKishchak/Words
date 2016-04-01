@@ -1,65 +1,127 @@
 Maison:
-  M: Дом
-  P: Домa
+  M: Д(о)м
+  P: Д(о)мa
 Table: Стол
-Soleil: Солнце
+Soleil: С(о)лнце
 Poupée Russe: Матрёшка
-Ours: Медведь
+Ours: Медв(е)дь
 Porte: Дверь
-Tasse: Чашка
-Chapka: Шапка
-Excusez-moi: Извините
-Au revoir: До свиданя
-Montagne: Гора
-Lait: Молоко
-Restaurant: Ресторан
-Hotel: Гостиница
+Tasse: Ч(а)шка
+Chapka: Ш(а)пка
+Excusez-moi: Извин(и)те
+Au revoir: До свид(а)ния
+Montagne: Гор(а)
+Lait: Молок(о)
+Restaurant: Рестор(а)н
+Hotel: Гост(и)ница
 Bonjour: Здравствуй(те)
-Salut!: Привет!
-Vélo: Велосипед
-Copain: Парень
+Salut (Bonjour): Прив(е)т!
+Salut! (Au revoir): Пока!
+Vélo: Велосип(е)д
+Copain: П(а)рень
 Baleine: Кит
-Travail: Работа
+Travail: Раб(о)та
 Mug: Кружка
 Guitare: Гитара
-Appartement: Квартира
-Chambre: Спальня
-Salon: Гостиная
-Salle à manger: Столовая
-Cuisine: Кухня
-Salle de bain: Ванная
-Lit: Кровать
-Chaise: Стул
-Canapé: Диван
-Bureau: Бюро / Офис
-Toilettes: Туалет
-Pièce: Комната
+Appartement: Кварт(и)ра
+Chambre: К(о)мната
+Salon: Гост(и)ная
+Salle à manger: Стол(о)вая
+Cuisine: К(у)хня
+Salle de bain: В(а)нная
+Lit: Кров(а)ть
+Chaise:
+  M: Стул
+  P: Стулья
+Canapé:
+  M: Див(а)н
+Bureau: Бюр(о) / (О)фис
+Toilettes: Туал(е)т
+Pièce: К(о)мната
 Étage: Этаж
 Immeuble: Здание
-Père: Отец
-Papa: Папа
+Père: От(е)ц
+Papa: П(а)па
 Mère: Мать
-Maman: Мама
-Grand-père: Дедушка
-Grand-mère: Бабушка
+Maman: М(а)ма
+Grand-père: Д(е)душка
+Grand-mère: Б(а)бушка
 Frère: Брат
-Soeur: Сестра
+Soeur: С(е)стра
 Oncle: Дядя
 Tante: Тётя
-Cousin: Двоюродныи брат
-Cousine: Двоюродная сестра
-Fenêtre: Окно
+Cousin:
+  M: двоюродный брат
+  F: Двоюродная сестра
+Fenêtre: Окн(о)
 Lampe: Лампа
-Livre: Книга
-Assiette: Тарелка
+Livre: Кн(и)га
+Assiette: Тар(е)лка
 Verre: Стакан
-Fourchette: Вилка
+Fourchette: В(и)лка
 Couteau: Нож
 Thé: Чай
-Téléviseur: Телевизор
-Ordinateur: Компьютер
+Téléviseur: Телев(и)зор
+Ordinateur: Компь(ю)тер
 Chat:
   M: Кот
-  F: Кошка
-Chien: Собака
-Merci: Спасибо
+  F: К(о)шка
+Chien: Соб(а)ка
+Merci: Спас(и)бо
+Enfant:
+  M: Ребёнок
+  P: Д(е)ти
+Fille:
+  F: Д(е)вочка
+Garçon:
+  M: М(а)льчик
+Adolescent:
+  M: Подр(о)сток
+  F: Д(е)вочка подросток
+Femme:
+  F: Ж(е)нщина
+Homme:
+  M: Мужч(и)на
+Jeune Femme:
+  F: Д(е)вушка
+Jeune Homme:
+  M: Молод(о)й челов(е)к / П(а)рень
+Vieux:
+  M: Стар(и)к
+  F: Стар(у)шка
+  P: Пожилые люди
+Ami:
+  M: Друг
+  F: Подр(у)га
+Collègue: Колл(е)га
+Voisin:
+  M: Сос(е)д
+  F: Сос(е)дка
+Mon copain:
+  M: Меня д(е)вушка
+  F: Меня п(а)рень
+Mari:
+  M: Муж
+Femme:
+  F: жен(а)
+Époux:
+  M: супр(у)г
+  F: супр(у)га
+Famille:
+  F: Семь(я)
+Parents:
+  P: Род(и)тели
+Fille:
+  F: дочь
+Fils:
+  M: Сын
+Nièce:
+  F: Плем(я)нница
+Neveu:
+  M: Плем(я)нник
+Petit-fils:
+  M: Внук
+Petite-fille:
+  F: Вн(у)чка
+De rien: Пож(а)луйста
+Très: (О)чень
