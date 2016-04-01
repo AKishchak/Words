@@ -23,18 +23,22 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
   $scope.shuffling = function shuffling() {
     var shuffledArray = [];
     for (var cat in $scope.json) {
-      var a = $scope.json[cat];
-      var j, x, i; // eslint-disable-line one-var
-      for (i = a.length; i; i -= 1) {
-        j = Math.floor(Math.random() * i);
-        x = a[i - 1];
-        a[i - 1] = a[j];
-        a[j] = x;
-      }
-      shuffledArray = shuffledArray.concat(a);
+      shuffledArray = shuffledArray.concat($scope.json[cat]);
+    }
+
+    var j, x, i; // eslint-disable-line one-var
+    for (i = shuffledArray.length; i; i -= 1) {
+      j = Math.floor(Math.random() * i);
+      x = shuffledArray[i - 1];
+      shuffledArray[i - 1] = shuffledArray[j];
+      shuffledArray[j] = x;
     }
 
     $scope.json = {'Every day I\'m shuffling': shuffledArray};
+  };
+
+  $scope.isString = function isString(str) {
+    return typeof str === 'string';
   };
 
   $scope.accentuate = function accentuate(str) {

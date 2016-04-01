@@ -47,7 +47,7 @@
           <tr ng-repeat="item in list">
             <td ng-bind="$index + 1"></td>
             <td ng-class="{hidden: !show.french}"><span ng-bind="item.fr"></span></td>
-            <td ng-class="{hidden: !show.russian}" ng-bind-html="!!item.ru.M ? accentuate(item.ru.M) : accentuate(item.ru)"></td>
+            <td ng-class="{hidden: !show.russian}" ng-bind-html="isString(item.ru) ? accentuate(item.ru) : accentuate(item.ru.M)"></td>
             <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.N) || '-'"></td>
             <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.F) || '-'"></td>
             <td ng-class="{hidden: !show.russian}" ng-bind-html="accentuate(item.ru.P) || '-'"></td>
