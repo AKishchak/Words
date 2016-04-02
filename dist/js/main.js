@@ -4,6 +4,7 @@ var russianApp = angular.module('russian', ['ngSanitize']);
 
 russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $http) {
   $scope.json = {};
+  $scope.reveal = {};
   $scope.show = {
     french: true,
     russian: true
@@ -33,7 +34,7 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
       shuffledArray[i - 1] = shuffledArray[j];
       shuffledArray[j] = x;
     }
-
+    $scope.reveal = {};
     $scope.json = {'Every day I\'m shuffling': shuffledArray};
   };
 
