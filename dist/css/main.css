@@ -16,19 +16,14 @@ label {
   margin-right: 1rem;
 }
 
-.hidden > span{
-  background: #000;
-  color: #000;
-  cursor: pointer;
-  display: block;
-}
 
-table {
+.table {
   table-layout: fixed;
 }
 
-table td {
+.table td {
   font-size: 21px;
+  vertical-align: middle;
 }
 
 .is-narrow td:first-child {
@@ -40,4 +35,28 @@ table td {
 b {
   color: #000;
   font-weight: bold;
+}
+
+.hidden > span{
+  background: #000;
+  color: #000;
+  cursor: pointer;
+  display: block;
+}
+
+@font-face {
+  font-family: 'pecita';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./pecita.otf');
+}
+
+.loadfont {
+  font-family: 'pecita';
+}
+
+.handwritten .russian {
+  font-family: 'pecita';
+  font-size: 37px;
+  line-height: 1px;
 }

@@ -7,7 +7,8 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
   $scope.reveal = {};
   $scope.show = {
     french: true,
-    russian: true
+    russian: true,
+    handwritten: false
   };
 
   $http.get('./words.json').then(function callback(response) {

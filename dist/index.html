@@ -26,13 +26,17 @@
           <input type="checkbox" ng-model="show.russian" ng-change="reveal = {}">
           Show Russian
         </label>
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.handwritten">
+          Handwritten
+        </label>
       </p>
     </div>
 
     <div ng-repeat="(categorie, list) in json">
 
       <h1 id="title-{{$index}}" class="title is-3" ng-bind="categorie"></h1>
-      <table class="table is-bordered is-striped is-narrow">
+      <table class="table is-bordered is-striped is-narrow" ng-class="{handwritten: show.handwritten}">
         <thead>
           <tr>
             <th style="width: 1px;"></th>
@@ -46,17 +50,21 @@
         <tbody>
           <tr ng-repeat="item in list">
             <td ng-bind="$index + 1"></td>
-            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.french && !reveal[$index]}"><span ng-bind="item.fr"></span></td>
-            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="isString(item.ru) ? accentuate(item.ru) : accentuate(item.ru.M)"></td>
-            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.N) || '-'"></td>
-            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.F) || '-'"></td>
-            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.P) || '-'"></td>
+            <td ng-click="reveal[$index] = !reveal[$index]" ng-class="{hidden: !show.french && !reveal[$index]}">
+              <span ng-bind="item.fr"></span>
+            </td>
+            <td ng-click="reveal[$index] = !reveal[$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="isString(item.ru) ? accentuate(item.ru) : accentuate(item.ru.M)"></td>
+            <td ng-click="reveal[$index] = !reveal[$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.N) || '-'"></td>
+            <td ng-click="reveal[$index] = !reveal[$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.F) || '-'"></td>
+            <td ng-click="reveal[$index] = !reveal[$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[$index]}" ng-bind-html="accentuate(item.ru.P) || '-'"></td>
           </tr>
         </tbody>
       </table>
 
     </div>
   </div>
+
+  <div class="loadfont">'</div>
 
   <script src="./js/angular.min.js" charset="utf-8"></script>
   <script src="./js/angular-sanitize.min.js" charset="utf-8"></script>
