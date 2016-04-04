@@ -4,6 +4,7 @@ fs   = require('fs');
 var files = [
   'vocabulary',
   'adjectives',
+  'other',
 ];
 
 var json = {};
