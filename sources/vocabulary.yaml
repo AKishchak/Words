@@ -47,7 +47,9 @@ Mère: Мать
 Maman: М(а)ма
 Grand-père: Д(е)душка
 Grand-mère: Б(а)бушка
-Frère: Брат
+Frère:
+  M: Брат
+  P: Братья
 Soeur: С(е)стра
 Oncle: Дядя
 Tante: Тётя
@@ -124,5 +126,9 @@ Petite-fille:
   F: Вн(у)чка
 De rien: Пож(а)луйста
 Très: (О)чень
-Une personne: челове́к
-Année, an: год
+Une personne, humain:
+  M: челове́к
+Année, an:
+  M: год
+Cours, leçon:
+  M: уро́к
