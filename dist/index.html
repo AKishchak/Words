@@ -41,7 +41,8 @@
           <tr>
             <th style="width: 1px;"></th>
             <th></th>
-            <th>M (or not defined yet)</th>
+            <th>Not defined or not relevant</th>
+            <th>M</th>
             <th>N</th>
             <th>F</th>
             <th>Pl</th>
@@ -53,7 +54,8 @@
             <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" ng-class="{hidden: !show.french && !reveal[categorie][$index]}">
               <span ng-bind="item.fr"></span>
             </td>
-            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="isString(item.ru) ? accentuate(item.ru) : accentuate(item.ru.M)"></td>
+            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="item.ru.M ? '-' : accentuate(item.ru)"></td>
+            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="accentuate(item.ru.M) || '-'"></td>
             <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="accentuate(item.ru.N) || '-'"></td>
             <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="accentuate(item.ru.F) || '-'"></td>
             <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="accentuate(item.ru.P) || '-'"></td>

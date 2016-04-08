@@ -12,7 +12,6 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
   };
 
   $http.get('./words.json').then(function callback(response) {
-
     for (var cat in response.data) {
       $scope.json[cat] = [];
       for (var word in response.data[cat]) { // eslint-disable-line one-var
@@ -37,10 +36,6 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
     }
     $scope.reveal = {};
     $scope.json = {'Every day I\'m shuffling': shuffledArray};
-  };
-
-  $scope.isString = function isString(str) {
-    return typeof str === 'string';
   };
 
   $scope.accentuate = function accentuate(str) {

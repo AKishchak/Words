@@ -1,10 +1,14 @@
 Maison:
   M: Д(о)м
   P: Д(о)мa
-Table: Стол
+Table:
+  M: Стол
+  P: Стол(ы)
 Soleil: С(о)лнце
 Poupée Russe: Матрёшка
-Ours: Медв(е)дь
+Ours:
+  M: Медв(е)дь
+  P: Медв(е)ди
 Porte: Дверь
 Tasse: Ч(а)шка
 Chapka: Ш(а)пка
@@ -22,7 +26,6 @@ Copain: П(а)рень
 Baleine: Кит
 Travail: Раб(о)та
 Mug: Кр(у)жка
-Bien: Хорош(о)
 Guitare: Гитара
 Appartement: Кварт(и)ра
 Chambre: К(о)мната
@@ -40,30 +43,44 @@ Bureau: Бюр(о) / (О)фис
 Toilettes: Туал(е)т
 Pièce: К(о)мната
 Étage: Этаж
-Immeuble: Зд(а)ние
+Immeuble:
+  N: Зд(а)ние
+  P: Зд(а)ния
 Père: От(е)ц
-Papa: П(а)па
-Mère: Мать
+Papa:
+  M: П(а)па
+  P: П(а)пы
+Mère:
+  F: Мать
+  P: М(а)тери
 Maman: М(а)ма
-Grand-père: Д(е)душка
+Grand-père:
+  M: Д(е)душка
+  P: Д(е)душки
 Grand-mère: Б(а)бушка
 Frère:
   M: Брат
   P: Братья
 Soeur: С(е)стра
-Oncle: Дядя
+Oncle:
+  M: Дядя
+  P: Дяди
 Tante: Тётя
 Cousin:
   M: двоюродный брат
   F: Двоюродная сестра
-Fenêtre: Окн(о)
+Fenêtre:
+  N: Окн(о)
+  P: (О)кна
 Lampe: Лампа
 Livre: Кн(и)га
 Assiette: Тар(е)лка
 Verre: Стакан
 Fourchette: В(и)лка
 Couteau: Нож
-Thé: Чай
+Thé:
+  M: Чай
+  P: Чаи
 Téléviseur: Телев(и)зор
 Ordinateur: Компь(ю)тер
 Chat:
@@ -74,9 +91,9 @@ Merci: Спас(и)бо
 Enfant:
   M: Ребёнок
   P: Д(е)ти
-Fille:
+Fille (girl):
   F: Д(е)вочка
-Garçon:
+Garçon (boy):
   M: М(а)льчик
 Adolescent:
   M: Подр(о)сток
@@ -85,6 +102,7 @@ Femme:
   F: Ж(е)нщина
 Homme:
   M: Мужч(и)на
+  P: Мужч(и)ны
 Jeune Femme:
   F: Д(е)вушка
 Jeune Homme:
@@ -92,14 +110,20 @@ Jeune Homme:
 Vieux:
   M: Стар(и)к
   F: Стар(у)шка
-  P: Пожилые люди
+  P: Пожилые л(ю)ди
 Ami:
   M: Друг
+  P: Другзь(я)
+Amie:
   F: Подр(у)га
+  P: Подр(у)ги
 Collègue: Колл(е)га
 Voisin:
   M: Сос(е)д
+  P: Сос(е)ди
+Voisine:
   F: Сос(е)дка
+  P: Сос(е)дки
 Mon copain:
   M: мой п(а)рень
   F: моя д(е)вушка
@@ -111,11 +135,15 @@ Mari / Femme:
   F: супр(у)га
 Famille:
   F: Семь(я)
+  P: С(е)мьи
 Parents:
   P: Род(и)тели
-Fils / Fille:
+Fils:
   M: Сын
+  P: Сыновь(я)
+Fille:
   F: дочь
+  P: Д(о)чери
 Nièce:
   F: Плем(я)нница
 Neveu:
@@ -128,9 +156,153 @@ De rien: Пож(а)луйста
 Très: (О)чень
 Une personne, humain:
   M: челов(е)к
+  P: Л(ю)ди
 Année, an:
   M: год
 Cours, leçon:
   M: Ур(o)к
 À gauche: Сл(е)ва
 À droite: Спр(а)ва
+Journal:
+  F: Газ(е)та
+  P: Газ(е)ты
+Machine, voiture:
+  F: Маш(и)на
+  P: Маш(и)ны
+Campagne, village:
+  F: Дер(е)вня
+  P: Дер(е)вни
+Histoire:
+  F: Ист(о)рия
+  P: Ист(о)рии
+Cahier:
+  F: Тетр(а)дь
+  P: Тетр(а)ди
+Souris:
+  F: Мышь
+  P: М(ы)ши
+Place:
+  F: Пл(о)щадь
+  P: Пл(о)щади
+Occupation, travail:
+  N: Д(е)ло
+  P: Дел(а)
+Métro:
+  N: Письм(о)
+  P: П(и)сьма
+Lettre:
+  N: Метр(о)
+  P: Метр(о)
+Radio:
+  N: Р(а)дио
+  P: Р(а)дио
+Manteau:
+  N: Пальт(о)
+  P: Пальт(о)
+Mer:
+  N: М(о)ре
+  P: Мор(я)
+Vêtement, habit:
+  N: Пл(а)тье
+  P: Пл(а)тья
+Fusil:
+  N: Рыжь(ё)
+  P: Р(ы)жья
+Prénom:
+  N: (И)мя
+  P: Имен(а)
+Temps:
+  N: Вр(е)мя
+  P: Времен(а)
+Oreille:
+  N: (У)хо
+  P: (У)ши
+Épaule:
+  N: Плеч(о)
+  P: Пл(е)чи
+Plume:
+  N: Пер(о)
+  P: П(е)рья
+Arbre:
+  N: Д(е)рево
+  P: Дер(е)вья
+Ciel:
+  N: Н(е)бо
+  P: Небес(а)
+Fleur:
+  M: Цвет(о)к
+  P: Цвет(ы)
+Ville:
+  M: Г(о)род
+  P: Город(а)
+Adresse:
+  M: (А)дрес
+  P: Адрес(а)
+Numéro:
+  M: Н(о)мер
+  P: Номер(а)
+Forêt:
+  M: Лес
+  P: Лес(а)
+Île:
+  M: (О)Стров
+  P: Остров(а)
+Neige:
+  M: Снег
+  P: Снег(а)
+Soir, Soirée:
+  M: В(е)чер
+  P: Вечер(а)
+Oeil:
+  M: Глаз
+  P: Глаз(а)
+Voix:
+  M: Г(о)лос
+  P: Голос(а)
+Siècle:
+  M: Век
+  P: Век(а)
+Docteur, médecin:
+  M: Д(о)ктор
+  P: Доктор(а)
+Train:
+  M: П(о)езд
+  P: Поезд(а)
+Passeport:
+  M: П(а)спорт
+  P: Паспорт(а)
+Instituteur:
+  M: Уч(и)тель
+  F: Уч(и)тельница
+  P: Учител(я)
+Bout, bord:
+  M: Край
+  P: Кра(я)
+Prince:
+  M: Князь
+  P: Князь(я)
+Café:
+  M: К(о)фе
+  P: К(о)фе
+Étudiant:
+  M: Студ(е)нт
+  P: Студ(е)нты
+Téléphone:
+  M: Телеф(о)н
+  P: Телеф(о)ны
+Feuille:
+  M: Лист
+  P: лист(ы)
+voiture:
+  M: Автомоб(и)ль
+  P: Автомоб(и)ли
+Musée:
+  M: Муз(е)й
+  P: Муз(е)и
+Nom de famille:
+  F: фам(и)лия
+  P: фам(и)лии
+Informaticien:
+  M: Прогр(а)ммист
+Médecin:
+  M: Врач

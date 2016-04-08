@@ -6,6 +6,8 @@ var files = [
   'adjectives',
   'other',
   'sentences',
+  'adverbs',
+  'verbs',
 ];
 
 var json = {};
