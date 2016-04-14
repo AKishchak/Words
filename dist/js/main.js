@@ -5,6 +5,7 @@ var russianApp = angular.module('russian', ['ngSanitize']);
 russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $http) {
   $scope.json = {};
   $scope.reveal = {};
+  $scope.nbLast = 50;
   $scope.show = {
     french: true,
     russian: true,
@@ -20,11 +21,17 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
     }
   });
 
+  $scope.limit = function limit() {
+    for (var cat in $scope.json) {
+      $scope.json[cat] = $scope.json[cat].slice(-$scope.nbLast);
+    }
+  };
 
   $scope.shuffling = function shuffling() {
     var shuffledArray = [];
     for (var cat in $scope.json) {
-      shuffledArray = shuffledArray.concat($scope.json[cat]);
+      var arr = $scope.json[cat].slice(-$scope.nbLast);
+      shuffledArray = shuffledArray.concat(arr);
     }
 
     var j, x, i; // eslint-disable-line one-var
