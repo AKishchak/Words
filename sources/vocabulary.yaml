@@ -202,9 +202,11 @@ Manteau:
 Mer:
   N: М(о)ре
   P: Мор(я)
-Vêtement, habit:
+Robe:
   N: Пл(а)тье
   P: Пл(а)тья
+Vêtement, habit:
+  F: Од(е)жда
 Fusil:
   N: Ружь(ё)
   P: Р(у)жья
