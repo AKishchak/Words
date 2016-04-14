@@ -153,7 +153,6 @@ Petit-fils:
 Petite-fille:
   F: Вн(у)чка
 De rien: Пож(а)луйста
-Très: (О)чень
 Une personne, humain:
   M: челов(е)к
   P: Л(ю)ди
@@ -308,3 +307,80 @@ Informaticien:
   M: Прогр(а)ммист
 Médecin:
   M: Врач
+Mec:
+  M: Муж(и)к
+Nana, meuf:
+  F: Баба
+Boîte:
+  F: Кор(о)бка
+Hôpital:
+  F: Больн(и)ца
+Magasin:
+  M: Магаз(и)н
+Papier:
+  F: Бум(а)га
+Tableau:
+  F: Доск(а)
+Politique:
+  F: Пол(и)тика
+Animal:
+  N: Жив(о)тное
+  P: Жив(о)тные
+Jean:
+  P: дж(и)нсы
+Pull:
+  M: Св(и)тер
+Sneakers:
+  P: К(е)ды
+Opéra:
+  F: (О)пера
+Ballet:
+  M: Бал(е)т
+Poste:
+  F: П(о)чта
+Rue:
+  F: (У)лица
+Stade:
+  M: Стади(о)н
+Parc:
+  M: Парк
+Examen:
+  M: Экз(а)мен
+Concert:
+  M: Конц(е)рт
+Usine:
+  M: Зав(о)д
+Fabrique:
+  F: Ф(а)брика
+Gare:
+  M: Вокз(а)л
+Nord:
+  M: С(е)вер
+Sud:
+  M: Юг
+Est:
+  M: Вост(о)к
+Ouest:
+  M: З(а)пад
+Magazine:
+  M: Журн(а)л
+Sol:
+  M: Пол
+Armoire:
+  M: Шкаф
+Coin:
+  M: (У)гол
+Jardin:
+  M: Сад
+Bord, rivage:
+  M: Б(е)реп
+Pont:
+  M: Мост
+Glace:
+  M: Лёд
+Front:
+  M: Лоб
+Nez:
+  M: Нос
+Bouche:
+  M: Рот
