@@ -30,7 +30,7 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
   $scope.shuffling = function shuffling() {
     var shuffledArray = [];
     for (var cat in $scope.json) {
-      var arr = $scope.json[cat].slice(-$scope.nbLast);
+      var arr = $scope.json[cat];
       shuffledArray = shuffledArray.concat(arr);
     }
 
