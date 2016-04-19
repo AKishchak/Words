@@ -79,5 +79,13 @@
   <script src="./js/angular.min.js" charset="utf-8"></script>
   <script src="./js/angular-sanitize.min.js" charset="utf-8"></script>
   <script src="./js/main.js" charset="utf-8"></script>
+  <script type='application/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+      }, false);
+    }
+  </script>
 </body>
 </html>
