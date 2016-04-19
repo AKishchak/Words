@@ -45,18 +45,18 @@ b {
 }
 
 @font-face {
-  font-family: 'pecita';
+  font-family: 'odessa';
   font-style: normal;
   font-weight: normal;
-  src: url('./pecita.otf');
+  src: url('./odessa.ttf');
 }
 
 .loadfont {
-  font-family: 'pecita';
+  font-family: 'odessa';
 }
 
 .handwritten .russian {
-  font-family: 'pecita';
+  font-family: 'odessa';
   font-size: 37px;
   line-height: 27px;
 }
