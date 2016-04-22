@@ -320,7 +320,7 @@ Magasin:
   M: Магаз(и)н
 Papier:
   F: Бум(а)га
-Tableau:
+Tableau (noir):
   F: Доск(а)
 Politique:
   F: Пол(и)тика
@@ -385,3 +385,24 @@ Nez:
   M: Нос
 Bouche:
   M: Рот
+École:
+  F: Шк(о)ла
+Université:
+  M: Университ(е)т
+Tableau (art):
+  F: Карт(и)на
+Mur:
+  F: Стен(а)
+Zoo:
+  M: Зооп(а)рк
+Cinéma:
+  N: Кин(о)
+Photo:
+  N: Ф(о)то
+Moscou: Москв(а)
+Marché:
+  M: Р(ы)нок
+Film:
+  M: Фильм
+T-shirt:
+  F: Футб(о)лка
