@@ -435,6 +435,10 @@ Musique:
   F: М(у)зыка
 Légume:
   M: (О)вощ
+Fruit:
+  M: Фрукт
+Panier:
+  F: Корз(и)на
 Écharpe:
   M: Шарф
 Retraite:
@@ -453,3 +457,37 @@ Bordeaux:
   N: Борд(о)
 Toulouse:
   F: Тулуза
+Place:
+  N: М(е)сто
+Bus:
+  M: Автобус
+Semaine:
+  F: Нед(е)ля
+Mois:
+  M: М(е)сяц
+An:
+  M: Год
+janvier:
+  M: Янв(а)рь
+février:
+  M: Февр(а)ль
+mars:
+  M: Март
+avril:
+  M: Апр(е)ль
+mai:
+  M: Май
+juin:
+  M: И(ю)нь
+juillet:
+  M: И(ю)ль
+août:
+  M: (А)вгуст
+septembre:
+  M: Сент(я)брь
+octobre:
+  M: Окт(я)брь
+novembre:
+  M: Но(я)брь
+décembre:
+  M: Дек(а)брь
