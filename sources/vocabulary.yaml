@@ -457,8 +457,6 @@ Bordeaux:
   N: Борд(о)
 Toulouse:
   F: Тулуза
-Place:
-  N: М(е)сто
 Bus:
   M: Автобус
 Semaine:
@@ -467,27 +465,27 @@ Mois:
   M: М(е)сяц
 An:
   M: Год
-janvier:
+Janvier:
   M: Янв(а)рь
-février:
+Février:
   M: Февр(а)ль
-mars:
+Mars:
   M: Март
-avril:
+Avril:
   M: Апр(е)ль
-mai:
+Mai:
   M: Май
-juin:
+Juin:
   M: И(ю)нь
-juillet:
+Juillet:
   M: И(ю)ль
-août:
+Août:
   M: (А)вгуст
-septembre:
+Septembre:
   M: Сент(я)брь
-octobre:
+Octobre:
   M: Окт(я)брь
-novembre:
+Novembre:
   M: Но(я)брь
-décembre:
+Décembre:
   M: Дек(а)брь
