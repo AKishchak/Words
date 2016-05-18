@@ -489,3 +489,17 @@ Novembre:
   M: Но(я)брь
 Décembre:
   M: Дек(а)брь
+Lundi:
+  M: Понед(е)льник
+Mardi:
+  M: Вт(о)рник
+Mercredi:
+  F: Сред(а)
+Jeudi:
+  M: Четв(е)рг
+Vendredi:
+  F: П(я)тница
+Samedi:
+  F: Субб(о)та
+Dimanche:
+  N: Воскрес(е)нье
