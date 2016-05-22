@@ -503,3 +503,14 @@ Samedi:
   F: Субб(о)та
 Dimanche:
   N: Воскрес(е)нье
+Heure:
+  M: Час
+Pourquoi:
+  N: Почем(у)
+Mot:
+  N: Сл(о)во
+  P: Слов(а)
+Le Weekend:
+  P: Выходн(ы)е
+Jour de repos:
+  M: Выходн(о)й денЬ

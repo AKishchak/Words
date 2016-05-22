@@ -12,6 +12,7 @@
     <div class="tabs">
       <ul>
         <li ng-repeat="(categorie, list) in json"><a ng-href="#title-{{$index}}">{{categorie}}</a></li>
+        <li><a ng-href="#verbs">Verbs</a></li>
       </ul>
     </div>
 
@@ -72,7 +73,35 @@
       </table>
 
     </div>
+
+    <div>
+      <h1 id="verbs" class="title is-3">Verbs</h1>
+      <table class="table is-bordered is-striped is-narrow" ng-class="{handwritten: show.handwritten}">
+        <thead>
+          <tr>
+            <th style="width: 1px;"></th>
+            <th></th>
+            <th>Imperfectif</th>
+            <th>Perfectif</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in verbs.slice().reverse()">
+            <td ng-bind="$index + 1"></td>
+            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" ng-class="{hidden: !show.french && !reveal[categorie][$index]}">
+              <span ng-bind="item.fr"></span>
+            </td>
+            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="::accentuate(item.ru.I) || '-'"></td>
+            <td ng-click="reveal[categorie][$index] = !reveal[categorie][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[categorie][$index]}" ng-bind-html="::accentuate(item.ru.P) || '-'"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
+
+
+
 
   <div class="loadfont">'</div>
 

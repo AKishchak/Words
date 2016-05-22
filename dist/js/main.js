@@ -4,6 +4,7 @@ var russianApp = angular.module('russian', ['ngSanitize']);
 
 russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $http) {
   $scope.json = {};
+  $scope.verbs = [];
   $scope.reveal = {};
   $scope.nbLast = 50;
   $scope.show = {
@@ -18,6 +19,13 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
       for (var word in response.data[cat]) { // eslint-disable-line one-var
         $scope.json[cat].push({fr: word, ru: response.data[cat][word]});
       }
+    }
+  });
+
+  $http.get('./verbs.json').then(function callback(response) {
+    var res = response.data;
+    for (var word in res) { // eslint-disable-line one-var
+      $scope.verbs.push({fr: word, ru: res[word]});
     }
   });
 
