@@ -82,9 +82,9 @@ Construire:
 Se reposer:
   I: Отдых(а)ть
   P: Отдохн(у)ть
-Décider, résoudre:
-  I: Реш(а)ть
-  P: Реш(и)ть
 Prendre:
   I: Брать
   P: Взять
+  Décider, résoudre:
+    I: Реш(а)ть
+    P: Реш(и)ть
