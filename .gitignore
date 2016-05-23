@@ -1,4 +1,5 @@
 .DS_Store
 node_modules/
 dist/words.json
+dist/verbs.json
 npm-debug.log
