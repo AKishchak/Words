@@ -20,7 +20,6 @@ for (var i = 0; i < files.length; i++) {
   }
 }
 
-fs.writeFileSync('dist/words.json', JSON.stringify(json), 'utf8');
 
 
 var verbs = {};
@@ -35,3 +34,4 @@ for (var i = 0; i < files.length; i++) {
 }
 
 fs.writeFileSync('dist/verbs.json', JSON.stringify(verbs), 'utf8');
+fs.writeFileSync('dist/words.json', JSON.stringify(json), 'utf8');

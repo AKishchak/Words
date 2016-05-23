@@ -52,12 +52,12 @@ Aller (à pied):
   I: Идт(и)
 Aller (à pied) .ind.:
   I: Ход(и)ть
-Commencer à:
+Commencer:
   I: Начин(а)ть
-Continuer à:
-  I: Продолж(а)ть
-Finir de:
+  P: Нач(а)ть
+Finir:
   I: Конч(а)ть
+  P: К(о)нчить
 Comprendre:
   I: Поним(а)ть
   P: Пон(я)ть
