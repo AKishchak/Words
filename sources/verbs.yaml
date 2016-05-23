@@ -37,6 +37,7 @@ Vouloir:
   P: Изуч(и)ть
 Manger:
   I: Есть
+  P: Съесть
 Boire:
   I: Пить
 Savoir, connaitre:
@@ -57,3 +58,33 @@ Continuer à:
   I: Продолж(а)ть
 Finir de:
   I: Конч(а)ть
+Comprendre:
+  I: Поним(а)ть
+  P: Пон(я)ть
+Apprendre, enseigner:
+  I: Уч(и)ть
+  P: Науч(и)ть
+Donner:
+  I: Дав(а)ть
+  P: Дать
+Laver:
+  I: Мыть
+  P: Пом(ы)ть
+Préparer:
+  I: Гот(о)вить
+  P: Пригот(о)вить
+Dessiner:
+  I: Рисов(а)ть
+  P: Нарисов(а)ть
+Construire:
+  I: Ст(о)ить
+  P: Постр(о)ить
+Se reposer:
+  I: Отдых(а)ть
+  P: Отдохн(у)ть
+Décider, résoudre:
+  I: Реш(а)ть
+  P: Реш(и)ть
+Prendre:
+  I: Брать
+  P: Взять
