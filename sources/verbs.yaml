@@ -26,6 +26,7 @@ Penser:
   I: Сл(у)шать
 Faire:
   I: Д(е)лать
+  P: Д(е)лать
 Acheter:
   I: Покуп(а)ть
 Voir:
@@ -52,12 +53,6 @@ Aller (à pied):
   I: Идт(и)
 Aller (à pied) .ind.:
   I: Ход(и)ть
-Commencer:
-  I: Начин(а)ть
-  P: Нач(а)ть
-Finir:
-  I: Конч(а)ть
-  P: К(о)нчить
 Comprendre:
   I: Поним(а)ть
   P: Пон(я)ть
@@ -88,3 +83,9 @@ Décider, résoudre:
 Prendre:
   I: Брать
   P: Взять
+Commencer:
+  I: Начин(а)ть
+  P: Нач(а)ть
+Finir:
+  I: Конч(а)ть
+  P: К(о)нчить
