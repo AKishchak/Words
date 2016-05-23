@@ -2,18 +2,24 @@ Travailler:
   I: Раб(о)тать
 Lire:
   I: Чит(а)ть
+  P: Прочит(а)ть
 Regarder:
   I: Смотр(е)ть
+  P: Посмотр(е)ть
 Écrire:
   I: Пис(а)ть
+  P: Напис(а)ть
 Aimer:
   I: Люб(и)ть
+  P: Полюб(и)ть
 Parler:
   I: Говор(и)ть
+  P: Сказ(а)ть
 Vivre, habiter:
   I: Жить
 Se promener:
   I: Гул(я)ть
+  P: Погул(я)ть
 Penser:
   I: Д(у)мать
 Étre debout:
@@ -24,33 +30,44 @@ Penser:
   I: Сид(е)ть
 Écouter:
   I: Сл(у)шать
+  I: Посл(у)шать
+Entendre:
+  I: Сл(ы)шать
+  I: Усл(ы)шать
 Faire:
   I: Д(е)лать
-  P: Д(е)лать
+  P: Сд(е)лать
 Acheter:
   I: Покуп(а)ть
+  P: Куп(и)ть
 Voir:
   I: В(и)деть
+  P: Ув(и)деть
 Vouloir:
   I: Хот(е)ть
+  P: Захот(е)ть
 Étudier:
   I: Изуч(а)ть
   P: Изуч(и)ть
 Manger:
   I: Есть
-  P: Съесть
+  P: Съесть / Поесть
 Boire:
   I: Пить
+  P: В(ы)пить / Попить
 Savoir, connaitre:
   I: Знать
 Savoir faire:
   I: Ум(е)ть
+  P: Сум(е)ть
 Pouvoir:
   I: Мочь
+  I: Смочь
 Être:
   I: Быть
 Aller (à pied):
   I: Идт(и)
+  P: Пойт(и)
 Aller (à pied) .ind.:
   I: Ход(и)ть
 Comprendre:
