@@ -17,7 +17,7 @@ Parler:
   P: Сказ(а)ть
 Vivre, habiter:
   I: Жить
-  P: Пожить
+  P: Пож(и)ть 
 Se promener:
   I: Гул(я)ть
   P: Погул(я)ть
@@ -52,10 +52,10 @@ Vouloir:
   P: Изуч(и)ть
 Manger:
   I: Есть
-  P: Съесть / Поесть
+  P: Съесть / По(е)сть
 Boire:
   I: Пить
-  P: В(ы)пить / Попить
+  P: В(ы)пить / Поп(и)ть
 Savoir, connaitre:
   I: Знать
 Savoir faire:
@@ -74,15 +74,18 @@ Aller (à pied) .ind.:
 Comprendre:
   I: Поним(а)ть
   P: Пон(я)ть
-Apprendre, enseigner:
+Enseigner:
   I: Уч(и)ть
   P: Науч(и)ть
+Apprendre:
+  I: Уч(и)ть
+  P: В(ы)учить
 Donner:
   I: Дав(а)ть
   P: Дать
 Laver:
   I: Мыть
-  P: Пом(ы)ть
+  P: Пом(ы)ть / в(ы)мыть
 Préparer:
   I: Гот(о)вить
   P: Пригот(о)вить
@@ -90,7 +93,7 @@ Dessiner:
   I: Рисов(а)ть
   P: Нарисов(а)ть
 Construire:
-  I: Ст(о)ить
+  I: Стр(о)ить
   P: Постр(о)ить
 Se reposer:
   I: Отдых(а)ть
@@ -119,3 +122,8 @@ Montrer:
 Expliquer:
   I: Объясн(я)ть
   P: Объясн(и)ть
+Chercher:
+  I: Иск(а)ть
+Trouver:
+  P: Найт(и)
+  
