@@ -90,7 +90,7 @@ Chien: Соб(а)ка
 Merci: Спас(и)бо
 Enfant:
   M: Ребёнок
-  P: Д(е)ти
+  P: Д(е)ти / Реб(я)та
 Fille (girl):
   F: Д(е)вочка
 Garçon (boy):
@@ -522,3 +522,13 @@ Cadeau:
   M: Под(а)рок
 Photograhpie:
   F: Фотогр(а)фия
+Élève:
+ M: Учен(и)к
+ P: Учен(и)ки
+Article:
+  F: Стать(я)
+Exercice:
+  N: Упражн(е)ние
+Animaux domestiques:
+  P: Дом(а)шние жив(о)тные
+Après midi: П(о)сле об(е)да
