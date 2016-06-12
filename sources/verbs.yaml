@@ -138,3 +138,15 @@ Continuer:
 Dormir, se reposer:
   I: Спать
   P: Посп(а)ть
+S'occuper de, faire:
+  I: Заним(а)ться
+  P: Зан(я)ться
+Jouer:
+  I: Игр(а)ть
+  P: Сыгр(а)ть
+Utiliser:
+  I: П(о)льзоваться
+  P: Исп(о)льзоваться
+Tuer:
+  I: Убив(а)ть
+  P: Уб(и)ть
