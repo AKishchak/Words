@@ -550,3 +550,28 @@ Crayon:
   M: Каранд(а)ш
 Riz:
   M: Рис
+Farine:
+  F: Мук(а)
+Sang:
+  F: Кровь
+Stylo:
+  F: Р(у)чка
+Faute:
+  F: Ош(и)бка
+Dent:
+  M: Зуб
+  P: Зубы
+Bosse à dents:
+  F: Зубн(а)я щётка
+Temperature:
+  F: Температ(у)ра
+Pression:
+  N: Давл(е)ние
+Pharmacie:
+  F: Апт(е)ка
+Tire-bouchon:
+  M: Шт(о)пор
+Rivière, fleuve:
+  F: Рек(а)
+Lac:
+  F: (О)зера
