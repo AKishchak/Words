@@ -135,7 +135,7 @@ Choisir:
 Continuer:
   I: Продолж(а)ть
   P: прод(о)лжить
-Dormir, se reposer:
+Dormir:
   I: Спать
   P: Посп(а)ть
 S'occuper de, faire:
@@ -146,7 +146,7 @@ Jouer:
   P: Сыгр(а)ть
 Utiliser:
   I: П(о)льзоваться
-  P: Исп(о)льзоваться
+  P: Исп(о)льзовать
 Tuer:
   I: Убив(а)ть
   P: Уб(и)ть
