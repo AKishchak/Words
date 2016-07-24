@@ -1,3 +1,8 @@
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   padding: 3rem 0;
   width: 100%;

@@ -4,7 +4,6 @@ var russianApp = angular.module('russian', ['ngSanitize']);
 
 russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $http) {
   $scope.json = {};
-  $scope.verbs = [];
   $scope.reveal = {};
   $scope.nbLast = 50;
   $scope.show = {
@@ -13,34 +12,25 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
     handwritten: false
   };
 
-  $http.get('./words.json').then(function callback(response) {
-    for (var cat in response.data) {
-      $scope.json[cat] = [];
-      for (var word in response.data[cat]) { // eslint-disable-line one-var
-        $scope.json[cat].push({fr: word, ru: response.data[cat][word]});
-      }
-    }
-  });
+  $scope.cat = window.cat;
 
-  $http.get('./verbs.json').then(function callback(response) {
-    var res = response.data;
-    for (var word in res) { // eslint-disable-line one-var
-      $scope.verbs.push({fr: word, ru: res[word]});
+  $http.get('./' + $scope.cat + '.json').then(function callback(response) {
+    $scope.json[$scope.cat] = [];
+    for (var word in response.data) { // eslint-disable-line one-var
+      $scope.json[$scope.cat].push({fr: word, ru: response.data[word]});
     }
   });
 
   $scope.limit = function limit() {
-    for (var cat in $scope.json) {
-      $scope.json[cat] = $scope.json[cat].slice(-$scope.nbLast);
-    }
+    $scope.json[$scope.cat] = $scope.json[$scope.cat].slice(-$scope.nbLast);
   };
 
   $scope.shuffling = function shuffling() {
-    var shuffledArray = [];
-    for (var cat in $scope.json) {
-      var arr = $scope.json[cat];
-      shuffledArray = shuffledArray.concat(arr);
-    }
+    var shuffledArray = $scope.json[$scope.cat];
+    // for (var cat in $scope.json) {
+    //   var arr = $scope.json[cat];
+    //   shuffledArray = shuffledArray.concat(arr);
+    // }
 
     var j, x, i; // eslint-disable-line one-var
     for (i = shuffledArray.length; i; i -= 1) {
@@ -50,7 +40,7 @@ russianApp.controller('mainCtrl', ['$scope', '$http', function scope($scope, $ht
       shuffledArray[j] = x;
     }
     $scope.reveal = {};
-    $scope.json = {'Every day I\'m shuffling': shuffledArray};
+    $scope.json[$scope.cat] = shuffledArray;
   };
 
   $scope.accentuate = function accentuate(str) {
