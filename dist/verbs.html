@@ -66,8 +66,19 @@
             <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" ng-class="{hidden: !show.french && !reveal[cat][$index]}">
               <span ng-bind="item.fr"></span>
             </td>
-            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}" ng-bind-html="::accentuate(item.ru.I) || '-'"></td>
-            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}" ng-bind-html="::accentuate(item.ru.P) || '-'"></td>
+            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}">
+              <ul>
+                <li><span ng-bind-html="::accentuate(item.ru.I) || '-'"></span></li>
+                <li><span ng-bind-html="::accentuate(item.ru.P) || '-'"></span></li>
+                </ul>
+            </td>
+            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}">
+              <ul>
+                <li>Я <span ng-bind-html="::accentuate(item.ru[1]) || '-'"></span></li>
+                <li>Ты <span ng-bind-html="::accentuate(item.ru[2]) || '-'"></span></li>
+                <li>Они <span ng-bind-html="::accentuate(item.ru[6]) || '-'"></span></li>
+              </ul>
+            </td>
           </tr>
         </tbody>
       </table>
