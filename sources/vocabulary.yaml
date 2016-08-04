@@ -651,10 +651,12 @@ Cheminée:
 Nouvelle, information:
   F: Н(о)вость
   P: Н(о)вости
-Météo:
-  F: Пог(о)да
 Dessin:
   M: Рис(у)нок
   P: Рис(у)нки
 Sac à dos:
   M: Рюкз(а)к
+Prévision:
+  M: Прогн(о)з
+Météo:
+  F: Пог(о)да

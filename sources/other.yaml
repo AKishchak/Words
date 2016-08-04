@@ -10,8 +10,8 @@ Voici, voila: Вот
 Dans: В
 Sur: на
 À propos de: О / об / обо
-Ou: Или
-Où (destination, adonde): Куда
+Où (provenance): Куда
+D'où (destination, adonde): Откуда
 Déjà: Уж(е)
 Encore: Ещё
 Une fois: Од(и)н раз
@@ -33,7 +33,7 @@ Pour: Для
 Quel, lequel: Кот(о)рый
 Là, là bas: Там
 Ainsi: Так
-Donc, c'est dont que: Зн(а)чит
+Donc, c'est donc que: Зн(а)чит
 Alors, dans ce cas là: Тогд(а)
 Devoir:
   M: Должен
@@ -42,3 +42,12 @@ Devoir:
   P: Должны
 Etc.: и т.п.
 Proche de: Недалек(о)
+Ou: Или
+Si: ли
+Chez: К
+Quelqu'un: Кто-то Кто-нибудь
+Quelque chose: что-то что-нибудь
+Pas encore: Пока ещё
+Parce que: Потому что
+Donc: Потому
+Le même: Один и тот же
