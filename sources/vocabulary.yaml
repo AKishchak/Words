@@ -529,6 +529,7 @@ Article:
   F: Стать(я)
 Exercice:
   N: Упражн(е)ние
+  P: Упражн(е)ния
 Animal domestique:
   N: дом(а)шнее жив(о)тное
   P: Дом(а)шние жив(о)тные
@@ -670,3 +671,12 @@ Visite:
   M: Виз(и)т
 Action:
   N: Д(е)йствие
+Pomme de terre:
+  F: Карт(о)шка
+Champignon:
+  M: Гриб
+  P: Гриб(ы)
+Dos:
+  F: Спин(а)
+Tête:
+  F: Голо(в)а
