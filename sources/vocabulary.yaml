@@ -534,8 +534,6 @@ Animal domestique:
   N: дом(а)шнее жив(о)тное
   P: Дом(а)шние жив(о)тные
 Après midi: П(о)сле об(е)да
-Terre:
-  F: Земл(я)
 Sport:
   M: Спорт
 Hache:
@@ -701,3 +699,11 @@ Couleur:
 Oiseau:
   F: Птица
   P: Птицы
+Chanson:
+  F: П(е)сня
+Terre:
+  F: Земл(я)
+Pièce de théatre:
+  F: Пь(е)са
+Camarade:
+  M: Тов(а)рищ
