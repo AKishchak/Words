@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Russian</title>
+  <link rel="stylesheet" href="./css/bulma.min.css"/>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body ng-app="russian">
+  <div ng-controller="mainCtrl" class="container">
+
+  <script type="text/javascript">
+      window.cat = 'verbs';
+  </script>
+
+    <div class="tabs">
+      <ul>
+        <li><a href="./vocabulary.html">Vocabulary</a></li>
+        <li><a href="./adjectives.html">Adjectives</a></li>
+        <li><a href="./other.html">Other</a></li>
+        <li><a href="./adverbs.html">Adverbs</a></li>
+        <li><a href="./sentences.html">Sentences</a></li>
+        <li><a href="./verbs.html">Verbs</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="control">
+        <div class="control is-grouped">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.french" ng-change="reveal = {}">
+          Show French
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.russian" ng-change="reveal = {}">
+          Show Russian
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" ng-model="show.handwritten">
+          Handwritten
+        </label>
+
+        <button style="margin: -.5rem 1rem 0 0;" type="button" class="is-small button is-info" ng-click="shuffling()">Shuffle!</button>
+        <label>
+          Nb last
+        </label>
+        <input class="is-small input" type="text"ng-model="nbLast" style="margin: -.5rem 1rem 0 0; max-width: 50px;">
+        <button style="margin: -.5rem 1rem 0 0;" type="button" class="is-small button is-info" ng-click="limit()">Limit!</button>
+        </div>
+      </p>
+    </div>
+
+      <h1 class="title is-3" ng-bind="cat"></h1>
+      <table class="table is-bordered is-striped is-narrow" ng-class="{handwritten: show.handwritten}">
+        <thead>
+          <tr>
+            <th style="width: 1px;"></th>
+            <th></th>
+            <th>Imperfectif/Perfectif</th>
+            <th>Conjugaison</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in json[cat].slice().reverse()">
+            <td ng-bind="$index + 1"></td>
+            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" ng-class="{hidden: !show.french && !reveal[cat][$index]}">
+              <span ng-bind="item.fr"></span>
+            </td>
+            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}">
+              <ul>
+                <li><span ng-bind-html="::accentuate(item.ru.I) || '-'"></span></li>
+                <li><span ng-bind-html="::accentuate(item.ru.P) || '-'"></span></li>
+                </ul>
+            </td>
+            <td ng-click="reveal[cat][$index] = !reveal[cat][$index]" class="russian" ng-class="{hidden: !show.russian && !reveal[cat][$index]}">
+              <ul>
+                <li>Я <span ng-bind-html="::accentuate(item.ru[1]) || '-'"></span></li>
+                <li>Ты <span ng-bind-html="::accentuate(item.ru[2]) || '-'"></span></li>
+                <li>Они <span ng-bind-html="::accentuate(item.ru[6]) || '-'"></span></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+  </div>
+
+
+
+
+  <div class="loadfont">'</div>
+
+  <script src="./js/angular.min.js" charset="utf-8"></script>
+  <script src="./js/angular-sanitize.min.js" charset="utf-8"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
+  <script type='application/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+      }, false);
+    }
+  </script>
+</body>
+</html>

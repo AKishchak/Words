@@ -1,0 +1,67 @@
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.title,
+.tabs a {
+  text-transform: capitalize
+}
+
+.title {
+  margin-top: 1.5rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+
+.table {
+  table-layout: fixed;
+}
+
+.table td {
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+.is-narrow td:first-child {
+  font-size: 12px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+b {
+  color: #000;
+  font-weight: bold;
+}
+
+.hidden > span{
+  background: #000;
+  color: #000;
+  cursor: pointer;
+  display: block;
+}
+
+@font-face {
+  font-family: 'odessa';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./odessa.ttf');
+}
+
+.loadfont {
+  font-family: 'odessa';
+}
+
+.handwritten .russian {
+  font-family: 'odessa';
+  font-size: 37px;
+  line-height: 27px;
+}
